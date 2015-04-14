@@ -1,0 +1,10 @@
+<h1>Add a bike</h1>
+
+<%= form_for @bicycle do |f| %>
+Price:<%= f.text_field :price %>
+Style:<%= f.text_field :style %>
+Color:<%= f.text_field :color %>
+
+<%= f.submit "Add a bike" %>
+
+<% end %>

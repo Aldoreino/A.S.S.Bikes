@@ -1,0 +1,12 @@
+<h1>Edit this Bicycle</h1>
+<%= form_for @bicycle do |f| %>
+
+Price: <%= f.text_field :price %>
+Style: <%= f.text_field :style %>
+Color: <%= f.text_field :color %>
+
+<%= f.submit "Edit bicycle now" %>
+
+<% end %>
+
+<%= link_to "Back to list of bicycles", root_url %>

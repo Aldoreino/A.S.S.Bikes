@@ -1,0 +1,17 @@
+<h1>Welcome to A.S.S. Bike Shop</h1>
+
+<ul>
+	<% @bicycles.each do |bicycle| %>
+
+	<li><%= bicycle.price %> 
+		<%= bicycle.style %>
+		<%= bicycle.color %>
+		<%= link_to "show this bike", bicycle_path(bicycle) %>
+		<%= link_to "Edit this bike", edit_bicycle_path(bicycle) %>
+
+	</li>
+
+		<% end %>
+</ul>
+
+<%= link_to "add a bike", new_path %>

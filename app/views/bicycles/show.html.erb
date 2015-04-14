@@ -1,0 +1,9 @@
+		
+
+		<%= @bicycle.price %> 
+		<%= @bicycle.style %>
+		<%= @bicycle.color %>
+
+<%= link_to "Delete this ass bike", :bicycle, method: :delete, data: {confirm: "Are you sure you want to delete this ass bike?"} %>
+
+<%= link_to "Back to our bikes", root_url %>
